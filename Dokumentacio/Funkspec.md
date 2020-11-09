@@ -31,3 +31,9 @@ Az alap koncepció a jelenleg kialakult digitális oktatás helyzetét hivatott 
 * Admin: teljes hozzáférése van a weboldalhoz, szerkesztheti a kvízeket korlátlanul
 * Felhasználó: regisztráció után kapjuk meg a jogkört, létrehozhat kvízeket de csak a sajátját módosíthatja
 * Látogató: nem regisztrált felhasználó aki csak egy bemutatót lát a weboldalról
+
+## 6. Használati esetek
+
+Admin: Az admin felel a rendszer problémamentes működéséért, ezért az egész szerverhez van hozzáférése. Emellett hozzá kell tudnia férni a felhasználók listájához, tudnia kell módosítani azt, illetve a felhasználók jogosultságát, szerepkörét, jelszavát, felhasználó nevét is változtathatja. Hozzáfér a kvízek listájához, módosíthatja azokat.
+Felhasználó: Bejelentkezés nélkül: Megoldhat tesztet, annak PIN kódjának ismeretében, keresgélhet a meglévő tesztek között a témák alapján, megoldhatja azokat.
+Bejelentkezés után: Kereshet, megoldhat, illetve létre hozhat saját teszteket, amelyeket megoszthat másokkal is, vagy akár törölhet. Megadhat érdeklődési köröket, módosíthatja saját adatait, jelszavát, illetve törölheti a felhasználói fiókját. Megnézheti az eredményeit, pontszámait. 

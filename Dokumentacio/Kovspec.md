@@ -26,3 +26,13 @@ Statisztika | K9 | Toplista | Egy lista a játékosok pontszámairól, a lista e
 
 ## 9. Fogalomtár
 
+- **UML** - Unified Modeling Language
+- **Releváns** - fontos, lényeges, meghatározó, jelentős
+- **Corrective Maintenance:** A felhasználók által felfedezett és "user reportban"
+elküldött hibák kijavítása.
+- **Adaptive Maintenance:** A program naprakészen tartása és finomhangolása.
+- **Perfective Maintenance:** A szoftver hosszútávú használata érdekében végzett
+módosítások, új funkciók, a szoftver teljesítményének és működési
+megbízhatóságának javítása.
+- **Preventive Maintenance:** Olyan problémák elhárítása, amelyek még nem
+tűnnek fontosnak, de később komoly problémákat okozhatnak.

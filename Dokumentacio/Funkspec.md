@@ -37,3 +37,12 @@ Az alap koncepció a jelenleg kialakult digitális oktatás helyzetét hivatott 
 Admin: Az admin felel a rendszer problémamentes működéséért, ezért az egész szerverhez van hozzáférése. Emellett hozzá kell tudnia férni a felhasználók listájához, tudnia kell módosítani azt, illetve a felhasználók jogosultságát, szerepkörét, jelszavát, felhasználó nevét is változtathatja. Hozzáfér a kvízek listájához, módosíthatja azokat.
 Felhasználó: Bejelentkezés nélkül: Megoldhat tesztet, annak PIN kódjának ismeretében, keresgélhet a meglévő tesztek között a témák alapján, megoldhatja azokat.
 Bejelentkezés után: Kereshet, megoldhat, illetve létre hozhat saját teszteket, amelyeket megoszthat másokkal is, vagy akár törölhet. Megadhat érdeklődési köröket, módosíthatja saját adatait, jelszavát, illetve törölheti a felhasználói fiókját. Megnézheti az eredményeit, pontszámait. 
+
+
+## 8. Forgatókönyv
+
+Futási időben sok szereplő figyelhető meg. Egy szereplő létrehozza a kvízt, a többi pedig csatlakozhat a kvízhez ez megfelelő kvízazonosító megadása után majd elkezdhetik a kvíz kitöltését. A kvíz résztvevői a teljesítményük alapján pontot kapnak, az idő és a jó válaszok függvényében. A kvíz végén megjelenik a toplista az összes felhasználóval és pontszámával együtt, ahol össze lehet hasonlítani a felhasználók teljesítményét és le is lehet menteni a listát egy táblázat formájában. <br>
+A felhasználók mérföldköveket tudnak elérni a kvízek kitöltésével, melyet a saját profil fölün nyomon tudnak követni. Mindez szemlélteti egyes felhasználók aktivitását és teljesítményét is.
+
+## 9. Fogalomszótár
+

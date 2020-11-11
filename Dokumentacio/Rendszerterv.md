@@ -50,6 +50,7 @@ CREATE TABLE Válasz (
 
 ```
 **UML**
+<br>
 ![Adatbázis terv](../Dokumentacio/Képek/Adatbázis.PNG)
 
 ## 11. Telepítési terv

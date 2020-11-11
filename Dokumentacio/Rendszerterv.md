@@ -4,6 +4,54 @@ A rendszer célja egy online kvíz weboldal megvalósítása. Egy olyan felület
 
 ## 8. Adatbázis terv
 
+**Táblák**
+- **felhasználók:** Minden felhasználó, aki az oldalon regisztrált
+  - **id:** Azonosító szám, mindenképp felvesz egy egész típusú értéket, amit a rendszer automatikusan generál és egyesével növekszik, nem lehet két azonos szám
+  - **felhasználónév:** A felhasználók bejelentkezési/felhasználói neve, nem lehet üres
+  - **jelszó:** Nem lehet üres a mező
+  - **email:** Egyedi, tehát nem lehet két felhasználónak ugyanazon email címe és egyben nem lehet üres mező
+  - **jog:** Egész érték, nem lehet üres mező
+- **Kérdés:**
+  - **kérdésid:** Minden kérdés egyedi azanosítóval bír, automatikusan növekszik és nem lehet üres mező
+  - **Kérdés:** A kvízben szereplő kérdés szövege
+  - **helyesVálaszid:** Az kérdéshez tartózó helyes válasz
+- **Válasz:**
+  - **válaszid:** Az adott válasz egyedi azonosítója, nem lehet üres és automatikusan növekszik
+  - **válasz:** A válasz szövege
+  - **kérdésid:** A kérdéshez tartozó válasz (ez nem feltétlenül a helyes válasz!)
+
+**DSL**
+```
+DROP TABLE IF EXISTS Felhasználók;
+
+DROP TABLE IF EXISTS Kérdés;
+
+DROP TABLE IF EXISTS Válasz;
+
+CREATE TABLE Felhasználók (
+	id integer PRIMARY KEY AUTOINCREMENT,
+	felhasználónév text,
+	jelszó text,
+	email text,
+	jog integer
+);
+
+CREATE TABLE Kérdés (
+	kérdésid integer PRIMARY KEY AUTOINCREMENT,
+	kérdés text,
+	helyesVálaszid integer
+);
+
+CREATE TABLE Válasz (
+	válaszid integer PRIMARY KEY AUTOINCREMENT,
+	válasz text,
+	kérdésid integer
+);
+
+```
+**UML**
+![Adatbázis terv](../Dokumentacio/Képek/Adatbázis.PNG)
+
 ## 11. Telepítési terv
 
 1. Python telepítése
@@ -11,7 +59,7 @@ A rendszer célja egy online kvíz weboldal megvalósítása. Egy olyan felület
    * Telepítés
 2. (Opcionális) Apache telepítése
 3. Adatbázis telepítése - SQLite (Automatikus)
-4. Django kód telepítése <br> `python -m pip install Django`
+4. Django kód telepítése <br> ```python -m pip install Django```
 
 ## 12. Karbantartási terv
 

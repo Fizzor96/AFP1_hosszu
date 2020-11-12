@@ -32,6 +32,10 @@ Az alap koncepció a jelenleg kialakult digitális oktatás helyzetét hivatott 
 * Felhasználó: regisztráció után kapjuk meg a jogkört, létrehozhat kvízeket de csak a sajátját módosíthatja
 * Látogató: nem regisztrált felhasználó aki csak egy bemutatót lát a weboldalról
 
+## 4. Jelenlegi üzleti folyamatok modellje
+
+A mai világban az éttermek nagyrésze megtalálható és elérhető online, és telefonon is. A webes rendelés sokkal megkönnyítheti az éttermek dolgát mivel a rendelések felvételéhez nem kell munkaerőt csoportosítani. A tervezett weboldalunk ezeket az éttermeket egyesíti egy oldalon, és listázza ki azok étlapját. Ezek az online éttermek még nagyon kezdetleges formátumban találhatók meg, épp ezért készítjük el az adott weboldalt, mert van rá igény.
+
 ## 6. Használati esetek
 
 Admin: Az admin felel a rendszer problémamentes működéséért, ezért az egész szerverhez van hozzáférése. Emellett hozzá kell tudnia férni a felhasználók listájához, tudnia kell módosítani azt, illetve a felhasználók jogosultságát, szerepkörét, jelszavát, felhasználó nevét is változtathatja. Hozzáfér a kvízek listájához, módosíthatja azokat.

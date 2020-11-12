@@ -32,6 +32,9 @@ Jogosultságok:
     - Vendég
 
 
+## 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
+
+Opensource szoftver. Bárki által letölthető és felhasználható. Az értékesítése nem megengedett!
 
 ## 8. Követelménylista
 

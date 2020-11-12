@@ -39,6 +39,46 @@ A rendszer célja egy online kvíz weboldal megvalósítása. Egy olyan felület
   **Törvényi előírások, szabványok:**
   - **GDPR-nek való megfelelés**
 
+## 5. Funkcionális terv
+
+  **Rendszerszereplők:**
+  - **Adminisztrátor**
+  - **Felhasználó**
+  - **Vendég**
+
+  **Rendszerhasználati esetek és lefutásaik:**
+  - **Adminisztrátor**
+    - **Képes felhasználókat törölni**
+    - **Tudja módosítani a felhasználók jelszavát és adatait is**
+    - **Látja az összes regisztrált felhasználót**
+    - **Módosítani tudja a városokat, éttermeket és az étlapokat**
+    - **Teljes hozzáférése van a rendszerhez**
+  - **Felhasználó**
+    - **Megtekintheti az éttermeket, és lekérheti a hozzátartozó étlapokat**
+    - **Módosíthatja a saját adatait**
+    - **Módosíthatja jelszavát**
+    - **Adhat le rendelést az adott étteremhez**
+  - **Vendég**
+    - **Láthatja az éttermeket, és azok étlapjait**
+    - **Képes regisztrálni és bejelentkezni**
+    - **Nem tud rendelést leadni**
+
+  - **Menü-hierarchiák:**
+    - **Bejelentkezés**
+    - **Regisztráció**
+    - **Főoldal**
+
+    - **Bejelentkezés után:**
+      - **Felhasználók listája:** kizárólag admin joggal rendelkező felhasználóknak
+      - **Éttermek listája:** kizárólag admin joggal rendelkező felhasználóknak
+      - **Étlap módosítás/hozzáadása:** kizárólag admin joggal rendelkező felhasználóknak
+
+      - **Éttermek**
+      - **Városok**
+      - **Kijelentkezés**
+
+
+
 ## 8. Adatbázis terv
 
 **Táblák**

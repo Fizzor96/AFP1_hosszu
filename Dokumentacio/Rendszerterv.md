@@ -18,6 +18,10 @@ A rendszer célja egy online kvíz weboldal megvalósítása. Egy olyan felület
   6. Frontend design megtervezése
   7. Felhasználói felület kialakítása
 
+## 3. Üzleti folyamatok modellje
+
+![Üzleti modell](../Dokumentacio/Képek/Umodell.PNG)
+
 ## 8. Adatbázis terv
 
 **Táblák**

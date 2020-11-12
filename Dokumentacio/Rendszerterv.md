@@ -22,6 +22,23 @@ A rendszer célja egy online kvíz weboldal megvalósítása. Egy olyan felület
 
 ![Üzleti modell](../Dokumentacio/Képek/Umodell.PNG)
 
+## 4. Követelmények
+
+**Funkcionális követelmények**
+  - **Felhasználók adatainak tárolása**
+  - **Felhasználók tudják változtatni adataikat**
+  - **Városok tárolása**
+  - **Éttermek tárolása**
+  - **Reszponzív webes alapú megjelenítés**
+  - **Adminisztrátor tudja szerkeszteni a éttermek adatlapjait és a hozzá tartozó étlapokat**
+  - **A felhasználók képesek rendelést leadni az adott étteremnek**
+
+  **Nem funkcionális követelmények**
+  - **A felhasználók nem férnek hozzá egymás adataihoz**
+
+  **Törvényi előírások, szabványok:**
+  - **GDPR-nek való megfelelés**
+
 ## 8. Adatbázis terv
 
 **Táblák**

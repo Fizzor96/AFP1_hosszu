@@ -38,8 +38,19 @@ A mai világban az éttermek nagyrésze megtalálható és elérhető online, é
 
 ## 5. Igényelt üzleti folyamatok modellje
 
-Szükség van egy olyan oldalra amely összegyüjti az adott régió vagy megye éttermeit, ezzel is segítve az ottlakókat és az oda érkező túristákat abban hogy, egyszerűen tudják intézni az ételrendelést.
-A weboldal szerződést köt az éttermekkel majd egy felületet biztosít az éttermeknek arra hogy láthassák a felhasználók rendeléseit feléjük. A felhasználók pedig egy olyan felületet kapnak ahol könnyen kitudják választani a számukra legszimpatikusabb éttermet majd onnan tudnak rendelni.
+    5.1 Bejelentkezés
+        5.1.1 Beállítások
+    5.2.1 Város kiválasztása
+        5.2.1.1 Étterem kiválasztása
+            5.2.1.1.1 Étlap megtekintése
+            Ha be van jelentkezve a felhasználó:
+                5.2.1.1.1 Rendelés
+    5.4 Admin panel
+        5.4.1 Étterem hozzáadása
+        5.4.2 Város hozzáadása
+        5.4.3 Menük hozzáadása
+        5.4.4 Felhasználók kezelése
+    5.5 Regisztráció
 
 
 ## 6. Használati esetek

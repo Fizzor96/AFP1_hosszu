@@ -77,7 +77,15 @@ A rendszer célja egy online kvíz weboldal megvalósítása. Egy olyan felület
       - **Városok**
       - **Kijelentkezés**
 
-
+## 6. Fizikai környezet
+  - **Az alkalmazás csak web platformra készül.**
+  - **Nincsenek megvásárolt komponensek.**
+  - **Fejlesztői eszközök:**
+    - **Visual Studio Code**
+    - **Notepad++**
+    - **Sublime text 3**
+    - **MySQL Workbench**
+    - **HediSQL** 
 
 ## 8. Adatbázis terv
 

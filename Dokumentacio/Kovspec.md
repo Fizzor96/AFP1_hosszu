@@ -10,6 +10,29 @@ A rendszer egy online kvíz felületet valósít meg ahol a felhasználók kül�
 
 A projekt célja egy online kvíz weboldal létrehozása. A projekt webes felülettel kell rendelkezzen ami egyaránt elérhető mobilról vagy tablettről is. A weboldal funkciói csak regisztrálás után kell, hogy elérhetővé váljanak. Regisztráció nélkül csak a regisztráció valamint egy bemutató legyen elérhető a weboldalról. Regisztrálás után a felhasználóknak lehetőségük van kvíz versenyekben részt venni valamint saját kvízeket tudnak létrehozni. A weboldalon lesznek alapvető kvízek különböző témákkal, de természetesen a felhasználók tudnak sajátot létrehozni. A felhasználók rendelkeznek pontokkal amelyeket kvízekben való részvétellel, valamint helyes válaszokkal tudnak növelni. A pontokat eltudják költeni, valamint a pontok mérföldköveket is oldanak fel amelyek különböző dolgokat fognak feloldani a felhasználónak. A projekt megvalósítása egy webes keretrendszer használatával kell, hogy történjen, hiszen egyes keretrendszerek nagyban megtudják könnyíteni a fejlesztést valamint meg is gyorsítják azt. Szükség van egy bővebb jogkörrel rendelkező felhasználóra, tegyük fel egy adminisztrátorra. Az adminisztrátor tudja kezelni a felhasználó fiókokat, a pontozási rendszert, a mérföldköveket és teljes hatásköre van minden létrehozott kvíz felett. Ezen feladatokat csak ő tudja elvégezni azért, hogy a weboldal helyes működéséből ki ne zökkenjen, vagy ha hibát találunk akkor őt értesíteni tudjuk. Alapesetben a kvízeket csak a létrehozó szerkesztheti, ezt bírálhatja felül az adminisztrátor jogkörrel rendelkező felhasználó.
 
+## 4. Funkcionális követelmények
+
+1. Bejelentkezési felület
+2. Regisztrációs felület
+3. Város kiválasztás
+    - a felhasználó kitudja választani azt hogy melyik város éttermeit szeretné megtekinteni.
+4. Étterem kiválasztása
+    - az étterem kiválasztása után megjelenítjük az étlapot ahonnan tud választani a felhasználó
+5. Beállítások menüpont
+    - a felhasználó szerkesztheti az adatait
+
+Admin joggal rendelkezőknek:
+1. Admin felület
+        - szerkeszthetők az éttermek és azok étlapja
+        - szerkeszthetők a felhasználók
+
+Jogosultságok:
+    - Admin
+    - Felhasználó
+    - Vendég
+
+
+
 ## 8. Követelménylista
 
 Modul | ID | Név | Kifejtés

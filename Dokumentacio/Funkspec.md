@@ -36,6 +36,12 @@ Az alap koncepció a jelenleg kialakult digitális oktatás helyzetét hivatott 
 
 A mai világban az éttermek nagyrésze megtalálható és elérhető online, és telefonon is. A webes rendelés sokkal megkönnyítheti az éttermek dolgát mivel a rendelések felvételéhez nem kell munkaerőt csoportosítani. A tervezett weboldalunk ezeket az éttermeket egyesíti egy oldalon, és listázza ki azok étlapját. Ezek az online éttermek még nagyon kezdetleges formátumban találhatók meg, épp ezért készítjük el az adott weboldalt, mert van rá igény.
 
+## 5. Igényelt üzleti folyamatok modellje
+
+Szükség van egy olyan oldalra amely összegyüjti az adott régió vagy megye éttermeit, ezzel is segítve az ottlakókat és az oda érkező túristákat abban hogy, egyszerűen tudják intézni az ételrendelést.
+A weboldal szerződést köt az éttermekkel majd egy felületet biztosít az éttermeknek arra hogy láthassák a felhasználók rendeléseit feléjük. A felhasználók pedig egy olyan felületet kapnak ahol könnyen kitudják választani a számukra legszimpatikusabb éttermet majd onnan tudnak rendelni.
+
+
 ## 6. Használati esetek
 
 Admin: Az admin felel a rendszer problémamentes működéséért, ezért az egész szerverhez van hozzáférése. Emellett hozzá kell tudnia férni a felhasználók listájához, tudnia kell módosítani azt, illetve a felhasználók jogosultságát, szerepkörét, jelszavát, felhasználó nevét is változtathatja. Hozzáfér a kvízek listájához, módosíthatja azokat.

@@ -55,9 +55,10 @@ A mai világban az éttermek nagyrésze megtalálható és elérhető online, é
 
 ## 6. Használati esetek
 
-Admin: Az admin felel a rendszer problémamentes működéséért, ezért az egész szerverhez van hozzáférése. Emellett hozzá kell tudnia férni a felhasználók listájához, tudnia kell módosítani azt, illetve a felhasználók jogosultságát, szerepkörét, jelszavát, felhasználó nevét is változtathatja. Hozzáfér a kvízek listájához, módosíthatja azokat.
-Felhasználó: Bejelentkezés nélkül: Megoldhat tesztet, annak PIN kódjának ismeretében, keresgélhet a meglévő tesztek között a témák alapján, megoldhatja azokat.
-Bejelentkezés után: Kereshet, megoldhat, illetve létre hozhat saját teszteket, amelyeket megoszthat másokkal is, vagy akár törölhet. Megadhat érdeklődési köröket, módosíthatja saját adatait, jelszavát, illetve törölheti a felhasználói fiókját. Megnézheti az eredményeit, pontszámait. 
+Adminisztrátor: Az admin felel a rendszer problémamentes működéséért, ezért az egész szerverhez van hozzáférése. Emellett hozzá kell tudnia férni a felhasználók listájához, tudnia kell kezelni az éttermeket, hozzáadni, eltávolítani őket. Tud üzenetet fogadni az éttermektől és válaszolni is nekik. Kedvezményeket tud hozzáadni az éttermekhez. Listázni tud minden tevékenységet.
+Felhasználó: Bejelentkezés nélkül: Megnézheti az éttermeket, értékeléseket. Nem tud rendelni.
+Bejelentkezés után: Megtekintheti az étlapokat, tudja szűrni/rendezni az étlapot, ételeket pakolhat a kosarába, igény szerint választhat plusz feltétet. Megtekintheti az előző rendeléseit, felveheti a kapcsolatot az étteremmel, értékelni tudja az adott éttermet, kedvezményt tud aktiválni. Módosíthatja a felhasználói adatait.
+Étterem: Látja a rendeléseket, el tudja fogadni, illetve utasítani őket, meg tudja nézni a rendelés adatait. Ki tud tiltani felhasználókat az étteremből, segítséget kérhet az adminisztrátortól, nyomtathat számlát, minden adattal, valamint kedvezményt tud hozzáadni az étteremhez. 
 
 
 ## 8. Forgatókönyv

@@ -142,6 +142,10 @@ CREATE TABLE Válasz (
 <br>
 ![Adatbázis terv](../Dokumentacio/Képek/Adatbázis.PNG)
 
+## 9. Implementációs terv
+
+A webes felület HTML, CSS és PHP nyelven fog készülni. A különböző technológiákat amennyire lehet, külön fájlokba írva készítjük el, úgy csatoljuk egymáshoz. Így átláthatóbb, könnyebben változtatható és bővíthető lesz. A felhasználók, városok, éttermek és rendelések adatait egy MySql adatbázisban fogjuk tárolni. A reszponzív webdesign-t Bootstrap-pel fogjuk biztosítani.
+
 ## 11. Telepítési terv
 
 1. Python telepítése

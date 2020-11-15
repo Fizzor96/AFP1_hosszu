@@ -48,7 +48,7 @@ A mai világban az éttermek nagyrésze megtalálható és elérhető online, é
 3. Rendelés eljuttatása a megrendelőhöz: az étterem alkalmazottja végzi, személyesen => éttermen belüli átvétel, kiszállítás
 4. Megrendelés fizetése
 	4.1. Számla kiállítás: étteremben, az étterem alkalmazottja végzi => számla nyomtatása
-	4.2. Számla fizetés: személyesen, készpénz/bankkártya formájában
+	4.2. Számla fizetés: személyesen, készpénz/bankkártya formájában => étterem értékelése a felhasználó által
 
 ## 7. Igényelt üzleti folyamatok modellje
 

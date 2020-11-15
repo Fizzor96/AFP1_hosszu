@@ -36,6 +36,15 @@ Jogosultságok:
 
 Opensource szoftver. Bárki által letölthető és felhasználható. Az értékesítése nem megengedett!
 
+## 6. Jelenlegi üzleti folyamatok modellje
+
+A mai világban az éttermek nagyrésze megtalálható és elérhető online, és telefonon is. A webes rendelés sokkal megkönnyítheti az éttermek dolgát mivel a rendelések felvételéhez nem kell munkaerőt csoportosítani. A tervezett weboldalunk ezeket az éttermeket egyesíti egy oldalon, és listázza ki azok étlapját. Ezek az online éttermek még nagyon kezdetleges formátumban találhatók meg.
+
+
+## 7. Igényelt üzleti folyamatok modellje
+
+
+
 ## 8. Követelménylista
 
 Modul | ID | Név | Kifejtés

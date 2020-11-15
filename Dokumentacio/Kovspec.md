@@ -51,7 +51,25 @@ A mai világban az éttermek nagyrésze megtalálható és elérhető online, é
 
 ## 7. Igényelt üzleti folyamatok modellje
 
-
+1. Bejelentkezés
+	1.1 Beállítások
+2. Város kiválasztása
+	2.1 Étterem kiválasztása
+		2.1.1 Étlap megtekintése, rendezése/szűrése
+		Ha be van jelentkezve a felhasználó:
+		2.1.2 Rendelés
+			2.1.2.1 Kosár
+3. Admin jogosultsággal
+	3.1 Étterem hozzáadása
+	3.2 Város hozzáadása
+	3.3 Menük hozzáadása
+	3.4 Felhasználók kezelése
+4. Étterem
+	4.1 Megrendelések megtekintése
+		4.1.1 Elfogadás/elutasítás
+	4.2 Számla nyomtatás
+	4.3 Kedvezmény hozáadása
+5. Regisztráció
 
 ## 8. Követelménylista
 

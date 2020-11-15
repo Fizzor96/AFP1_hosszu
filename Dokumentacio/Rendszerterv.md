@@ -87,6 +87,10 @@ A rendszer célja egy online kvíz weboldal megvalósítása. Egy olyan felület
     - **MySQL Workbench**
     - **HediSQL** 
 
+## 7. Architekturális terv
+
+A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk, ebbe visszük fel a felhasználók, városok, éttermek és rendelések listáját. A backend php alapú. A bootstrap, a CSS keretrendszer felel a reszponzív webdesign-ért.
+
 ## 8. Adatbázis terv
 
 **Táblák**

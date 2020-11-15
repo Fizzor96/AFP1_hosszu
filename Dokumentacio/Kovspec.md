@@ -39,7 +39,15 @@ Opensource szoftver. Bárki által letölthető és felhasználható. Az érték
 ## 6. Jelenlegi üzleti folyamatok modellje
 
 A mai világban az éttermek nagyrésze megtalálható és elérhető online, és telefonon is. A webes rendelés sokkal megkönnyítheti az éttermek dolgát mivel a rendelések felvételéhez nem kell munkaerőt csoportosítani. A tervezett weboldalunk ezeket az éttermeket egyesíti egy oldalon, és listázza ki azok étlapját. Ezek az online éttermek még nagyon kezdetleges formátumban találhatók meg.
-
+1. Rendelés menete
+1.1. Rendelés leadása/felvétele: személyesen/telefonon, megrendelő és alkalmazott között
+1.2. Rendelés: az étterem alkalmazottja végzi, nyomtatott étlap alapján => étel megrendelése
+1.3. Rendelés feljegyzés: az étterem alkalmazottja végzi, megrendelt ételek => füzetbe/parírra való feljegyzése
+2. Rendelés továbbítása (konyhára): az étterem alkalmazottja végzi, feljegyzés továbbítása személyesen
+3. Rendelés eljuttatása a megrendelőhöz: az étterem alkalmazottja végzi, személyesen => éttermen belüli átvétel, kiszállítás
+4. Megrendelés fizetése
+4.1. Számla kiállítás: étteremben, az étterem alkalmazottja végzi => számla nyomtatása
+4.2. Számla fizetés: személyesen, készpénz/bankkártya formájában
 
 ## 7. Igényelt üzleti folyamatok modellje
 

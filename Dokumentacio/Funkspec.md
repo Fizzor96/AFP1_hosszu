@@ -60,6 +60,20 @@ Felhasználó: Bejelentkezés nélkül: Megnézheti az éttermeket, értékelés
 Bejelentkezés után: Megtekintheti az étlapokat, tudja szűrni/rendezni az étlapot, ételeket pakolhat a kosarába, igény szerint választhat plusz feltétet. Megtekintheti az előző rendeléseit, felveheti a kapcsolatot az étteremmel, értékelni tudja az adott éttermet, kedvezményt tud aktiválni. Módosíthatja a felhasználói adatait.
 Étterem: Látja a rendeléseket, el tudja fogadni, illetve utasítani őket, meg tudja nézni a rendelés adatait. Ki tud tiltani felhasználókat az étteremből, segítséget kérhet az adminisztrátortól, nyomtathat számlát, minden adattal, valamint kedvezményt tud hozzáadni az étteremhez. 
 
+## 7. Képernyő tervek
+
+Főoldalterv:
+
+![Főoldalterv](../Dokumentacio/Képek/Főoldal.png)
+
+Bejelentkezés terv:
+
+![Bejelentkezés](../Dokumentacio/Képek/Bejelentkezés.png)
+
+Regisztráció terv:
+
+![Regisztráció](../Dokumentacio/Képek/Regisztráció.png)
+
 
 ## 8. Forgatókönyv
 

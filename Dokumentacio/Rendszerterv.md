@@ -87,6 +87,10 @@ A rendszer célja egy online kvíz weboldal megvalósítása. Egy olyan felület
     - **MySQL Workbench**
     - **HediSQL** 
 
+## 7. Architekturális terv
+
+A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk, ebbe visszük fel a felhasználók, városok, éttermek és rendelések listáját. A backend php alapú. A bootstrap, a CSS keretrendszer felel a reszponzív webdesign-ért.
+
 ## 8. Adatbázis terv
 
 **Táblák**
@@ -137,6 +141,22 @@ CREATE TABLE Válasz (
 **UML**
 <br>
 ![Adatbázis terv](../Dokumentacio/Képek/Adatbázis.PNG)
+
+## 9. Implementációs terv
+
+A webes felület HTML, CSS és PHP nyelven fog készülni. A különböző technológiákat amennyire lehet, külön fájlokba írva készítjük el, úgy csatoljuk egymáshoz. Így átláthatóbb, könnyebben változtatható és bővíthető lesz. A felhasználók, városok, éttermek és rendelések adatait egy MySql adatbázisban fogjuk tárolni. A reszponzív webdesign-t Bootstrap-pel fogjuk biztosítani.
+
+## 10. Tesztterv
+
+Az alább leírt tesztelések célja a rendszer és funkcióinak teljes körű vizsgálata, ellenőrzése a megfelelő működés érdekében.
+
+Linkek, gombok tesztelése: a teszt célja a weboldalon megjelenő linkek és gombok megfelelő működésének ellenőrzése.
+A weboldal és az adatbázis kapcsolatának vizsgálata: fel kell tudnia tölteni az adatbázist a megfelelő adatokkal és vissza kell tudnia adni azokat. Törlési, hozzáadási, módosítási műveletek tesztelése. A jelszavak megfelelő tárolásának ellenőrzése, vagyis minden jelszó titkosításának (hashelésének) ellenőrzése.
+Hibás, hiányos adatok esetén adott hibaüzenetek ellenőrzése.
+Kiléptető rendszer tesztelése, egy nap után ki kell jelentkeztetnie a felhasználót.
+Számla nyomtatás működésének ellenőrzése.
+Étterem értékelés működésének vizsgálata.
+A weboldal helyes működésének ellenőrzése különböző böngészőkben pl. Firefox, Google Chrome…
 
 ## 11. Telepítési terv
 

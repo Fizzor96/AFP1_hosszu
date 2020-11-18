@@ -31,6 +31,14 @@ switch ($_GET['P']) {
 		die();
 		break;
 		
+	case 'admin':
+		if(isset($_SESSION['flags'])&&$_SESSION['flags'] > 5){
+			require_once PROTECTED_DIR.'admin/adminIndex.php';
+		}
+		else{
+			header('Location: index.php');
+		}
+		break;
 	case 'citiesEdit':
 		if(check_admin_flag()){
 			require_once PROTECTED_DIR.'admin/citiesEdit.php';

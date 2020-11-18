@@ -73,16 +73,13 @@ switch ($_GET['P']) {
 			header('Location: index.php');
 		}
 		break;
-<<<<<<< HEAD
-=======
 	case 'userEdit':
-		if(isset($_SESSION['flags'])&&$_SESSION['flags'] > 5){
+		if(check_admin_flag()){
 			require_once PROTECTED_DIR.'admin/userEdit.php';
 		}
 		else{
 			header('Location: index.php');
 		}
 		break;
->>>>>>> main
 }
 ?>

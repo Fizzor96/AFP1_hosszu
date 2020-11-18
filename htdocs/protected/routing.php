@@ -31,6 +31,13 @@ switch ($_GET['P']) {
 		die();
 		break;
 		
+	case 'etlap':
+	require_once PROTECTED_DIR.'pages/etlap.php';
+	require_once PROTECTED_DIR.'pages/login.php';
+	require_once PROTECTED_DIR.'pages/register.php';
+	require_once PROTECTED_DIR.'database.php';
+	break;
+		
 	case 'admin':
 		if(isset($_SESSION['flags'])&&$_SESSION['flags'] > 5){
 			require_once PROTECTED_DIR.'admin/adminIndex.php';

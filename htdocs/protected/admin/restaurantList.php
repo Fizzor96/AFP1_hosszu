@@ -1,3 +1,8 @@
+<?php
+	$query = "SELECT * FROM restaurants";
+	$datas = getList($query);
+	
+?>
 <table class="table table-striped table-dark">
   <thead>
     <tr>
@@ -11,18 +16,21 @@
     </tr>
   </thead>
   <tbody>
-
+  	<?php
+  	$i = 1;
+  	foreach ($datas as $d):
+  		?>
     <tr>
-      <th scope="row"></th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a href="">Szerkesztés</a></td>
-      <td><a href="">Törlés</a></td>
+      <th scope="row"><?=$i?></th>
+      <td><?=$d['name']?></td>
+      <td><?=$d['szall_ido']?></td>
+      <td><?=$d['szall_dij']?></td>
+      <td><?=$d['ertekeles_ossz']?></td>
+      <td><?=$d['ertekelok_szama']?></td>
+      <td><?=$d['cityId']?></td>
+      <td><a href="<?='index.php?P=restaurantEdit&id='.$d['id']?>">Szerkesztés</a></td>
+      <td><a href="<?='index.php?P=restaurantDelete&id='.$d['id']?>">Törlés</a></td>
     </tr>
-
+<?php $i++;endforeach;?>
   </tbody>
 </table>

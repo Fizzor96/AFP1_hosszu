@@ -1,3 +1,9 @@
+img.Logo {
+	height: 50px;
+}
+.nav-item {
+	margin-left: 20px;
+}
 .csalogato {
 	color: white;
 	margin-bottom: 50px;

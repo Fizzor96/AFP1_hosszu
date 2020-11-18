@@ -1,3 +1,31 @@
+<?php
+require_once DATABASE_CONTROLLER;
+
+if(isset($_POST['edit'])):
+	$query = "UPDATE restaurants SET name = :name , szall_ido = :szall_ido , szall_dij = :szall_dij , ertekeles_ossz = :ertekeles_ossz , ertekelok_szama = :ertekelok_szama , cityId = :cityId WHERE id = :id";
+	$params = [ 
+	':name' => $_POST['name'],
+	':szall_ido' => $_POST['szall_ido'],
+	':szall_dij' => $_POST['szall_dij'],
+	':ertekeles_ossz' => $_POST['ertekeles_ossz'],
+	':ertekelok_szama' => $_POST['ertekelok_szama'],
+	':cityId' => $_POST['cityId'],
+	':id' => $_POST['id']];
+	if(!executeDML($query,$params)):
+		echo 'Gebasz van<br>';
+		print_r($_POST);
+		echo '<br>';
+		print_r($params);
+	else:
+		header('Location: index.php?P=admin');
+	endif;
+
+else:
+	$query = "SELECT * FROM restaurants WHERE id = :id";
+	$params = [':id' => $_GET['id']];
+	$d = getRecord($query,$params);
+	?>
+
 <div class="container-fluid p-4">
 	<form method="POST">
 		<input type="hidden" name="id" value="<?=$d['id']?>">
@@ -28,3 +56,4 @@
 		<button name="edit" type="submit" class="btn btn-primary">Frissítés</button>
 	</form>
 </div>
+<?php endif;?>

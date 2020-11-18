@@ -8,18 +8,28 @@
 			<li class="nav-item">
 				<a class="nav-link" href="index.php?P=home">Főoldal</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" data-toggle="modal" data-target="#loginModal" href="index.php?P=login">Bejelentkezés</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" data-toggle="modal" data-target="#registerModal" href="index.php?P=register">Regisztráció</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="index.php?P=admin">Admin panel</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="index.php?P=settings">Beállítások</a>
-			</li>
+			<?php if(!isset($_SESSION['logged']) || !$_SESSION['logged']):?>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="modal" data-target="#loginModal" href="index.php?P=login">Bejelentkezés</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="modal" data-target="#registerModal" href="index.php?P=register">Regisztráció</a>
+				</li>
+			<?php
+			else:
+				if($_SESSION['flags'] > 5):
+				?>
+					<li class="nav-item">
+						<a class="nav-link" href="index.php?P=admin">Admin panel</a>
+					</li>
+				<?php endif;?>
+					<li class="nav-item">
+						<a class="nav-link" href="index.php?P=settings">Beállítások</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.php?P=logout">Kijelentkezés</a>
+					</li>
+			<?php endif;?>
 		</ul>
 	</div>
 </nav>

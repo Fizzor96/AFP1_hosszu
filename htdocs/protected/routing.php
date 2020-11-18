@@ -80,14 +80,6 @@ switch ($_GET['P']) {
 			header('Location: index.php');
 		}
 		break;
-	case 'userAdd':
-		if(check_admin_flag()){
-			require_once PROTECTED_DIR.'admin/userAdd.php';
-		}
-		else{
-			header('Location: index.php');
-		}
-		break;
 	case 'userEdit':
 		if(check_admin_flag()){
 			require_once PROTECTED_DIR.'admin/userEdit.php';

@@ -93,49 +93,46 @@ A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t h
 
 ## 8. Adatbázis terv
 
-**Táblák**
-- **felhasználók:** Minden felhasználó, aki az oldalon regisztrált
-  - **id:** Azonosító szám, mindenképp felvesz egy egész típusú értéket, amit a rendszer automatikusan generál és egyesével növekszik, nem lehet két azonos szám
-  - **felhasználónév:** A felhasználók bejelentkezési/felhasználói neve, nem lehet üres
-  - **jelszó:** Nem lehet üres a mező
-  - **email:** Egyedi, tehát nem lehet két felhasználónak ugyanazon email címe és egyben nem lehet üres mező
-  - **jog:** Egész érték, nem lehet üres mező
-- **Kérdés:**
-  - **kérdésid:** Minden kérdés egyedi azanosítóval bír, automatikusan növekszik és nem lehet üres mező
-  - **Kérdés:** A kvízben szereplő kérdés szövege
-  - **helyesVálaszid:** Az kérdéshez tartózó helyes válasz
-- **Válasz:**
-  - **válaszid:** Az adott válasz egyedi azonosítója, nem lehet üres és automatikusan növekszik
-  - **válasz:** A válasz szövege
-  - **kérdésid:** A kérdéshez tartozó válasz (ez nem feltétlenül a helyes válasz!)
-
 **DSL**
 ```
-DROP TABLE IF EXISTS Felhasználók;
-
-DROP TABLE IF EXISTS Kérdés;
-
-DROP TABLE IF EXISTS Válasz;
-
-CREATE TABLE Felhasználók (
-	id integer PRIMARY KEY AUTOINCREMENT,
-	felhasználónév text,
-	jelszó text,
-	email text,
-	jog integer
+CREATE TABLE `cities` (
+	`cid` INT NOT NULL AUTO_INCREMENT,
+	`Name` varchar(100) NOT NULL AUTO_INCREMENT,
+	PRIMARY KEY (`cid`)
 );
 
-CREATE TABLE Kérdés (
-	kérdésid integer PRIMARY KEY AUTOINCREMENT,
-	kérdés text,
-	helyesVálaszid integer
+CREATE TABLE `foods` (
+	`fid` INT NOT NULL AUTO_INCREMENT,
+	`fname` varchar(200) NOT NULL AUTO_INCREMENT,
+	`fprice` INT(11) NOT NULL,
+	`restid` INT(11) NOT NULL,
+	PRIMARY KEY (`fid`)
 );
 
-CREATE TABLE Válasz (
-	válaszid integer PRIMARY KEY AUTOINCREMENT,
-	válasz text,
-	kérdésid integer
+CREATE TABLE `users` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`username` varchar(200) NOT NULL UNIQUE,
+	`email` varchar(200) NOT NULL,
+	`password` varchar(200) NOT NULL,
+	`flags` INT(11) NOT NULL,
+	PRIMARY KEY (`id`)
 );
+
+CREATE TABLE `restaurants` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`name` varchar(200) NOT NULL,
+	`szall_ido` INT(11) NOT NULL,
+	`szall_dij` INT(11) NOT NULL,
+	`ertekeles_ossz` INT(11) NOT NULL,
+	`ertekelok_szama` INT(11) NOT NULL,
+	`cityId` INT(11) NOT NULL,
+	PRIMARY KEY (`id`)
+);
+
+ALTER TABLE `foods` ADD CONSTRAINT `foods_fk0` FOREIGN KEY (`restid`) REFERENCES `restaurants`(`id`);
+
+ALTER TABLE `restaurants` ADD CONSTRAINT `restaurants_fk0` FOREIGN KEY (`cityId`) REFERENCES `cities`(`cid`);
+
 
 ```
 **UML**
@@ -160,12 +157,14 @@ A weboldal helyes működésének ellenőrzése különböző böngészőkben pl
 
 ## 11. Telepítési terv
 
-1. Python telepítése
-   * Platformnak megfelő python telepítőcsomag letöltése
-   * Telepítés
-2. (Opcionális) Apache telepítése
-3. Adatbázis telepítése - SQLite (Automatikus)
-4. Django kód telepítése <br> ```python -m pip install Django```
+1. Apache telepítése
+2. MySQL server telepítése
+3. Forráskód importálása
+4. SQL importálása
+
+1. Webserver bérlése
+2. Forráskód Importálása
+3. Adatbázis importálása
 
 ## 12. Karbantartási terv
 

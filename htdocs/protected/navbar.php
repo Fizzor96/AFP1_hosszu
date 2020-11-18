@@ -11,6 +11,9 @@
 			<li class="nav-item">
 				<a class="nav-link" data-toggle="modal" data-target="#loginModal" href="index.php?P=login">Bejelentkezés</a>
 			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="modal" data-target="#registerModal" href="index.php?P=register">Regisztráció</a>
+			</li>
 		</ul>
 	</div>
 </nav>

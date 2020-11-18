@@ -1,5 +1,13 @@
 <?php
 
+function check_admin_flag(){
+	if(isset($_SESSION['flags'])&&$_SESSION['flags'] > 5)
+	{
+		return true;
+	}
+		
+}
+
 if(empty($_GET['P']))
 	$_GET['P'] = 'home';
 
@@ -24,7 +32,7 @@ switch ($_GET['P']) {
 		break;
 		
 	case 'citiesEdit':
-		if(isset($_SESSION['flags'])&&$_SESSION['flags'] > 5){
+		if(check_admin_flag()){
 			require_once PROTECTED_DIR.'admin/citiesEdit.php';
 		}
 		else{
@@ -33,7 +41,7 @@ switch ($_GET['P']) {
 		break;
 
 	case 'restaurantEdit':
-		if(isset($_SESSION['flags'])&&$_SESSION['flags'] > 5){
+		if(check_admin_flag()){
 			require_once PROTECTED_DIR.'admin/restaurantEdit.php';
 		}
 		else{
@@ -42,7 +50,7 @@ switch ($_GET['P']) {
 	break;
 	
 	case 'userAdd':
-		if(isset($_SESSION['flags'])&&$_SESSION['flags'] > 5){
+		if(check_admin_flag()){
 			require_once PROTECTED_DIR.'admin/userAdd.php';
 		}
 		else{

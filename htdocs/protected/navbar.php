@@ -8,6 +8,9 @@
 			<li class="nav-item">
 				<a class="nav-link" href="index.php?P=home">Főoldal</a>
 			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="modal" data-target="#loginModal" href="index.php?P=login">Bejelentkezés</a>
+			</li>
 		</ul>
 	</div>
 </nav>

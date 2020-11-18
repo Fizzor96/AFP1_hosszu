@@ -40,4 +40,5 @@ switch ($_GET['P']) {
 			header('Location: index.php');
 		}
 	break;
+}
 ?>

@@ -14,6 +14,12 @@
 			<li class="nav-item">
 				<a class="nav-link" data-toggle="modal" data-target="#registerModal" href="index.php?P=register">Regisztráció</a>
 			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="index.php?P=admin">Admin panel</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="index.php?P=settings">Beállítások</a>
+			</li>
 		</ul>
 	</div>
 </nav>

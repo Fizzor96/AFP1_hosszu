@@ -57,5 +57,13 @@ switch ($_GET['P']) {
 			header('Location: index.php');
 		}
 		break;
+	case 'userDelete':
+		if(check_admin_flag()){
+			require_once PROTECTED_DIR.'admin/userDelete.php';
+		}
+		else{
+			header('Location: index.php');
+		}
+		break;
 }
 ?>

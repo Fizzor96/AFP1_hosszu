@@ -22,6 +22,12 @@
 					<li class="nav-item">
 						<a class="nav-link" href="index.php?P=admin">Admin panel</a>
 					</li>
+				<?php endif;
+				if($_SESSION['flags'] == 3):
+				?>
+					<li class="nav-item">
+						<a class="nav-link" href="index.php?P=orders">Rendelések</a>
+					</li>
 				<?php endif;?>
 					<li class="nav-item">
 						<a class="nav-link" href="index.php?P=settings">Beállítások</a>

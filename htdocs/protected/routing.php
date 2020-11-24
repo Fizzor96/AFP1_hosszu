@@ -8,6 +8,13 @@ function check_admin_flag(){
 		
 }
 
+function check_user_is_restaurant(){
+	if(isset($_SESSION['flags']) && $_SESSION['flags'] == 3){
+		return true;
+	}
+}
+
+
 if(empty($_GET['P']))
 	$_GET['P'] = 'home';
 
@@ -88,5 +95,13 @@ switch ($_GET['P']) {
 			header('Location: index.php');
 		}
 		break;
+
+	case 'orders':
+		if(check_user_is_restaurant()){
+			require_once PROTECTED_DIR.'pages/orders.php';
+		}
+		else{
+			header('Location: index.php');
+		}
 }
 ?>

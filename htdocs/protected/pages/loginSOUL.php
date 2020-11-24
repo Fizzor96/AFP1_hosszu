@@ -39,6 +39,7 @@ if(isset($_POST['bejelentkezes']))
         $_SESSION['username'] =  $datas['username'];
         $_SESSION['flags'] = $datas['flags'];
         $_SESSION['login_time'] = time();
+        $_SESSION['userid'] = $datas['id'];
         //Ha bepipálta a Bejelentkezve maradok-ot akkor azt is lementem
         if (isset($_POST['stayLogin'])) {
           $_SESSION['stayLogin'] = $_POST['stayLogin'];

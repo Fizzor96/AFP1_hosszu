@@ -97,11 +97,23 @@ switch ($_GET['P']) {
 		break;
 
 	case 'orders':
-		if(check_user_is_restaurant()){
+		if(check_user_is_restaurant() || check_admin_flag()){
 			require_once PROTECTED_DIR.'pages/orders.php';
 		}
 		else{
 			header('Location: index.php');
 		}
+	break;
+	
+	case 'orderDelete':
+		if(check_user_is_restaurant() || check_admin_flag()){
+			require_once PROTECTED_DIR.'restaurant/deleteOrder.php';
+		}
+		else {
+			header('Location: orders.php');
+		}
+	break;
+
+
 }
 ?>

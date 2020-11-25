@@ -114,6 +114,13 @@ switch ($_GET['P']) {
 		}
 	break;
 
-
+	case 'orderReady':
+		if(check_user_is_restaurant() || check_admin_flag()){
+			require_once PROTECTED_DIR.'restaurant/readyOrder.php';
+		}
+		else {
+			header('Location: orders.php');
+		}
+	break;
 }
 ?>

@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-
+<?php error_reporting(E_ERROR | E_WARNING | E_PARSE);?>
 <?php require_once "protected/config.php" ?>
 <?php require_once PROTECTED_DIR."pages/loginSOUL.php"; ?>
 

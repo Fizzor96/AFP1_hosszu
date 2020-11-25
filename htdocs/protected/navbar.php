@@ -23,7 +23,7 @@
 						<a class="nav-link" href="index.php?P=admin">Admin panel</a>
 					</li>
 				<?php endif;
-				if($_SESSION['flags'] == 3):
+				if($_SESSION['flags'] == 3 || $_SESSION['flags'] > 5):
 				?>
 					<li class="nav-item">
 						<a class="nav-link" href="index.php?P=orders">Rendelések</a>

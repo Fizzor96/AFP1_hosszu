@@ -95,21 +95,17 @@ switch ($_GET['P']) {
 			header('Location: index.php');
 		}
 		break;
-<<<<<<< Updated upstream
 
 	case 'orders':
 		if(check_user_is_restaurant() || check_admin_flag()){
 			require_once PROTECTED_DIR.'pages/orders.php';
-=======
 	case 'addRestaurant':
 		if(check_admin_flag()){
 			require_once PROTECTED_DIR.'admin/addRestaurant.php';
->>>>>>> Stashed changes
 		}
 		else{
 			header('Location: index.php');
 		}
-<<<<<<< Updated upstream
 	break;
 	
 	case 'orderDelete':
@@ -129,8 +125,6 @@ switch ($_GET['P']) {
 			header('Location: orders.php');
 		}
 	break;
-=======
 		break;
->>>>>>> Stashed changes
 }
 ?>

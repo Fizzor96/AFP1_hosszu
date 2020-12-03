@@ -37,6 +37,11 @@ switch ($_GET['P']) {
 		header("Location: index.php?");
 		die();
 		break;
+
+	case 'rendallapot':
+		require_once PROTECTED_DIR.'database.php';
+		require_once PROTECTED_DIR.'pages/rendallapot.php';	
+	break;
 		
 	case 'etlap':
 	require_once PROTECTED_DIR.'pages/etlap.php';

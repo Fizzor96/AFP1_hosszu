@@ -45,6 +45,7 @@ if (getConnection()):
     <thead class="thead-dark">
       <tr>
         <th scope="col">#</th>
+        <th scope="col">Időpont</th>
         <th scope="col">Ügyfél</th>
         <th scope="col">Rendelés(ek)</th>
         <th scope="col">&nbsp; </th>
@@ -55,6 +56,7 @@ if (getConnection()):
     <?php for ($i=0; $i < count($rendelesek); $i++):?>
       <tr>
         <th scope="row"><?=$i+1?></th>
+        <td><?=$rendelesek[$i]['rendelesLeadas']?></td>
         <td>
         <?php
         if($usernames[$i] != ""){

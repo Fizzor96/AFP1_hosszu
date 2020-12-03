@@ -99,6 +99,7 @@ switch ($_GET['P']) {
 	case 'orders':
 		if(check_user_is_restaurant() || check_admin_flag()){
 			require_once PROTECTED_DIR.'pages/orders.php';
+		}
 		break;
 	case 'addRestaurant':
 		if(check_admin_flag()){

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2020. Nov 24. 14:16
+-- Létrehozás ideje: 2020. Dec 03. 11:05
 -- Kiszolgáló verziója: 10.4.11-MariaDB
 -- PHP verzió: 7.4.5
 
@@ -20,27 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Adatbázis: `website`
 --
-
--- --------------------------------------------------------
-
---
--- Tábla szerkezet ehhez a táblához `aktualis_rendelesek`
---
-
-CREATE TABLE `aktualis_rendelesek` (
-  `id` int(11) NOT NULL,
-  `userid` int(11) NOT NULL,
-  `restaurantid` int(11) NOT NULL,
-  `rendelesek` longtext NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- A tábla adatainak kiíratása `aktualis_rendelesek`
---
-
-INSERT INTO `aktualis_rendelesek` (`id`, `userid`, `restaurantid`, `rendelesek`) VALUES
-(1, 8, 9, 'Rántott hús'),
-(2, 8, 9, 'Rántott hús<br>\r\nRántott csirkemell <br>\r\nKolompér <br>\r\nTúrós csúsza');
 
 -- --------------------------------------------------------
 
@@ -90,6 +69,31 @@ INSERT INTO `foods` (`fid`, `fname`, `fprice`, `restid`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Tábla szerkezet ehhez a táblához `rendelesek`
+--
+
+CREATE TABLE `rendelesek` (
+  `id` int(11) NOT NULL,
+  `userid` int(11) NOT NULL,
+  `restaurantid` int(11) NOT NULL,
+  `rendelesek` longtext NOT NULL,
+  `status` int(11) NOT NULL DEFAULT 0,
+  `rendelesLeadas` datetime NOT NULL,
+  `rendelesElkeszult` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- A tábla adatainak kiíratása `rendelesek`
+--
+
+INSERT INTO `rendelesek` (`id`, `userid`, `restaurantid`, `rendelesek`, `status`, `rendelesLeadas`, `rendelesElkeszult`) VALUES
+(1, 8, 9, 'Rántott hús', 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(2, 7, 9, 'Rántott hús<br>\r\nRántott csirkemell <br>\r\nKolompér <br>\r\nTúrós csúsza', 0, '0000-00-00 00:00:00', '2020-11-26 00:00:00'),
+(3, 8, 9, 'Rántott hús<br>\r\nRántott csirkemell <br>\r\nKolompér <br>\r\nTúrós csúsza', 0, '0000-00-00 00:00:00', '2020-11-26 00:07:24');
+
+-- --------------------------------------------------------
+
+--
 -- Tábla szerkezet ehhez a táblához `restaurants`
 --
 
@@ -109,7 +113,7 @@ CREATE TABLE `restaurants` (
 --
 
 INSERT INTO `restaurants` (`id`, `name`, `szall_ido`, `szall_dij`, `ertekeles_ossz`, `ertekelok_szama`, `cityId`, `userid`) VALUES
-(2, 'Első étterem', 60, 200, 100, 2, 1, 9),
+(2, 'Első étterem', 60, 200, 100, 2, 1, 8),
 (3, 'Harmadik étterem', 10, 100, 1000, 100, 3, 0),
 (4, 'Negyedik étterem', 10, 100, 1000, 100, 3, 0),
 (5, 'Ötödik étterem', 10, 100, 1000, 100, 3, 0),
@@ -134,7 +138,6 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `flags`) VALUES
-(5, 'felh', 'felh@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0),
 (7, 'egyjatekos0204', 'egyjatekos0204@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 10),
 (8, 'user', 'user@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0),
 (9, 'etterem', 'etterem@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 3);
@@ -142,12 +145,6 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`, `flags`) VALUES
 --
 -- Indexek a kiírt táblákhoz
 --
-
---
--- A tábla indexei `aktualis_rendelesek`
---
-ALTER TABLE `aktualis_rendelesek`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- A tábla indexei `cities`
@@ -160,6 +157,12 @@ ALTER TABLE `cities`
 --
 ALTER TABLE `foods`
   ADD PRIMARY KEY (`fid`);
+
+--
+-- A tábla indexei `rendelesek`
+--
+ALTER TABLE `rendelesek`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- A tábla indexei `restaurants`
@@ -178,12 +181,6 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT a táblához `aktualis_rendelesek`
---
-ALTER TABLE `aktualis_rendelesek`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
 -- AUTO_INCREMENT a táblához `cities`
 --
 ALTER TABLE `cities`
@@ -194,6 +191,12 @@ ALTER TABLE `cities`
 --
 ALTER TABLE `foods`
   MODIFY `fid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT a táblához `rendelesek`
+--
+ALTER TABLE `rendelesek`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT a táblához `restaurants`

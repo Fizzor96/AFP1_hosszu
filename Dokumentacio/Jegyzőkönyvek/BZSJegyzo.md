@@ -19,5 +19,11 @@ Lépés | Funkció | Tesztelés leírása | Státusz | Megjegyzés | Aláírás 
 15 | Étlap | Az ételekhez tartozó képek megjlennítése | Siker | - | Berkes Zsolt | 2020.12.08
 16 | Éttermek | Éttermek sikeres megjelenítése a listában | Siker | - | Berkes Zsolt | 2020.12.08
 17 | Éttermek | Éttermek módosítása az admin interfészen | Siker | - | Berkes Zsolt | 2020.12.08
-18 | Városok | VÁrosok módosítása az admin interfészen | Siker | - | Berkes Zsolt | 2020.12.08
+18 | Városok | Városok módosítása az admin interfészen | Siker | - | Berkes Zsolt | 2020.12.08
 19 | Rendelések | A rendelések helyes megjelenése a felhasználóknak | Siker | - | Berkes Zsolt | 2020.12.08
+20 | Rendelések | A rendelések állapotának megtekintése | Sikertelen | A hibát egy elágazás hibás feltétele okozta | Berkes Zsolt | 2020.12.08
+21 | Felhasználók módosítása | A felhasználók adatainak sikeres módosítása | Siker | - | Berkes Zsolt | 2020.12.08
+22 | Felhasználók módosítása | A felhasználók adatainak sikeres betöltése | Siker | - | Berkes Zsolt | 2020.12.08
+23 | Admin interfész | Admin interfész helyes működése, menüpontok elérése | Siker | - | Berkes Zsolt | 2020.12.08
+24 | Rendelések kezelése | A beérkezett rendelések láthatósága, elérhetősége | Siker | - | Berkes Zsolt | 2020.12.08
+

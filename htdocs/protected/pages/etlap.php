@@ -19,9 +19,10 @@
 						<h5 class="card-header"><?=$datas[$i]['fname']?></h5>
 						<div class="card-body">
 							<h5 class="card-title"><?=$datas[$i]['fprice']?> ft</h5>
-							<?php if(isset($_SESSION['logged']) && $_SESSION['logged']): ?><a href="#" class="btn btn-primary">Rendelés</a>
+							<?php if(isset($_SESSION['logged']) && $_SESSION['logged']): ?>
+								<a href="index.php?P=rendeles&id=<?=$datas[$i]['fid']?>" class="btn btn-primary">Rendelés</a>
 							<?php else: ?>
-								<a href="#" class="btn btn-secondary">Kérlek jelentkezz be!</a>
+								<a href="index.php" class="btn btn-secondary">Kérlek jelentkezz be!</a>
 							<?php endif; ?>
 						</div>
 					</div>

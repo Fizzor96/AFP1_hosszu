@@ -132,6 +132,14 @@ switch ($_GET['P']) {
 			header('Location: orders.php');
 		}
 	break;
-		break;
+
+	case 'rendeles':
+		if($_SESSION["logged"]){
+			require_once PROTECTED_DIR.'restaurant/rendeles.php';
+		}
+		else {
+			header('Location: orders.php');
+		}
+	break;
 }
 ?>

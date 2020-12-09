@@ -16,9 +16,15 @@ Lépés | Funkció | Tesztelés leírása | Státusz | Megjegyzés | Aláírás 
 11 | Felhasználók módosítása | A felhasználók adatainak helyes betöltése | Siker | - | Jámbor Alexandra | 2020.12.08
 12 | Felhasználók módosítása | A felhasználók adatainak sikeres módosítása | Siker | - | Jámbor Alexandra | 2020.12.08
 13 | Felhasználó hozzáadása | Új felhasználó sikeres hozzáadása a listához és az adatbázishoz | Siker | - | Jámbor Alexandra | 2020.12.08
-14 | Felhasználó hozzáadása | Az új felhasználó adatainak sikeres megjelenítése a felhasználók listájában | Sikertelen | Az oldal újratöltésére volt szükség | Jámbor Alexandra | 2020.12.08
+14 | Felhasználó hozzáadása | Az új felhasználó adatainak sikeres megjelenítése a felhasználók listájában | Sikertelen | Elírás és hibás POST művelet okozta a problémát | Jámbor Alexandra | 2020.12.08
 15 | Felhasználó hozzáadása | Az új felhasználó adatainak sikeres megjelenítése a felhasználók listájában | Siker | - | Jámbor Alexandra | 2020.12.08
 16 | Felhasználó törlése | Meglévő felhasználó törlése a felhasználók listájából | Sikertelen | Az oldal többszöri újratöltésére volt szükség | Jámbor Alexandra | 2020.12.08
 17 | Felhasználó törlése | Meglévő felhasználó törlése a felhasználók listájából | Siker | - | Jámbor Alexandra | 2020.12.08
 18 | Felhasználó törlése | Meglévő felhasználó törlése az adatbázisból | Siker | - | Jámbor Alexandra | 2020.12.08
 19 | Admin interfész | Admin interfész helyes működése, menüpontok elérése | Siker | - | Jámbor Alexandra | 2020.12.09
+20 | Városok lista | A városok listájának helyes kilistázásának vizsgálata | Siker | - | Jámbor Alexandra | 2020.12.09
+21 | Városok lista | A városok adatainak helyes betöltése | Siker | - | Jámbor Alexandra | 2020.12.09
+22 | Város hozzáadása | Város hozzáadása a városok listához, adatbázishoz | Sikertelen | Hibás POST művelet okozta a hibát | Jámbor Alexandra | 2020.12.09
+23 | Város hozzáadása | Város hozzáadása a városok listához, adatbázishoz | Siker | - | Jámbor Alexandra | 2020.12.09
+24 | Város törlés | Város törlése a városok listájából, az adatbázisból | Siker | - | Jámbor Alexandra | 2020.12.09
+25 | Város módosítása | A város adatainak sikeres módosítása | Siker | - | Jámbor Alexandra | 2020.12.09

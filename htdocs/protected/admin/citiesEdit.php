@@ -1,7 +1,7 @@
 <?php
 require_once DATABASE_CONTROLLER;
 
-if(isset($_POST['edit'])):
+if(isset($_POST['editCity'])):
 	$query = "UPDATE cities SET Name =:nev WHERE cid = :id";
 	$params = [ 
 		":nev" => $_POST["Name"],
@@ -28,7 +28,7 @@ else:
             <label >Város neve</label>
             <input name="Name" type="text" class="form-control" value="<?=$d['Name']?>">
         </div>
-        <button name="edit" type="submit" class="btn btn-primary">Frissítés</button>
+        <button name="editCity" type="submit" class="btn btn-primary">Frissítés</button>
     </form>
 </div>
 <?php endif;?>

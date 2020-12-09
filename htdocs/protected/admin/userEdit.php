@@ -1,7 +1,7 @@
 <?php
 require_once DATABASE_CONTROLLER;
 
-if(isset($_POST['edit'])):
+if(isset($_POST['userEdit'])):
 	$query = "UPDATE users SET username=:username, email=:email,flags=:flags WHERE id = :id";
 	$params = [ 
 	':username' => $_POST['username'],
@@ -39,7 +39,7 @@ else:
             <label >Jogok</label>
             <input name="flags" type="text" class="form-control" value="<?=$d['flags']?>">
         </div>
-        <button name="edit" type="submit" class="btn btn-primary">Frissítés</button>
+        <button name="userEdit" type="submit" class="btn btn-primary">Frissítés</button>
     </form>
 </div>
 <?php endif;?>

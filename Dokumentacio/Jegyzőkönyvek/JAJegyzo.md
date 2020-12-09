@@ -36,3 +36,5 @@ Lépés | Funkció | Tesztelés leírása | Státusz | Megjegyzés | Aláírás 
 31 | Rendelések | A rendelések helyes megjelenítése a felhasználóknak | Siker | - | Jámbor Alexandra | 2020.12.09
 32 | Rendelések | A rendelések állapotának megjelenítése | Siker | - | Jámbor Alexandra | 2020.12.09
 33 | Bejelentkezés | Bejelentkezve maradok opció helyes működése | Siker | - | Jámbor Alexandra | 2020.12.09
+34 | Admin interfész | Menüpontok helyes megjelenítése | Siker | - | Jámbor Alexandra | 2020.12.09
+35 | Admin interfész | Menüpontok helyes működése | Siker | - | Jámbor Alexandra | 2020.12.09

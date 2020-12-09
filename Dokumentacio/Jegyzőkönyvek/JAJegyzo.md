@@ -28,3 +28,11 @@ Lépés | Funkció | Tesztelés leírása | Státusz | Megjegyzés | Aláírás 
 23 | Város hozzáadása | Város hozzáadása a városok listához, adatbázishoz | Siker | - | Jámbor Alexandra | 2020.12.09
 24 | Város törlés | Város törlése a városok listájából, az adatbázisból | Siker | - | Jámbor Alexandra | 2020.12.09
 25 | Város módosítása | A város adatainak sikeres módosítása | Siker | - | Jámbor Alexandra | 2020.12.09
+26 | Éttermek lista | Az éttermek listájának helyes kilistázásának vizsgálata | Siker | - | Jámbor Alexandra | 2020.12.09
+27 | Éttermek módosítása | Az éttermek adatainak sikeres módosítása | Siker | - | Jámbor Alexandra | 2020.12.09
+28 | Étlap | Az ételek helyes megjelenítése | Siker | - | Jámbor Alexandra | 2020.12.09
+29 | Étlap | Az ételek helyes kilistázása egyes éttermekhez | Siker | - | Jámbor Alexandra | 2020.12.09
+30 | Rendelések | Csak bejelentkezett felhasználó tudjon rendelni | Siker | - | Jámbor Alexandra | 2020.12.09
+31 | Rendelések | A rendelések helyes megjelenítése a felhasználóknak | Siker | - | Jámbor Alexandra | 2020.12.09
+32 | Rendelések | A rendelések állapotának megjelenítése | Siker | - | Jámbor Alexandra | 2020.12.09
+33 | Bejelentkezés | Bejelentkezve maradok opció helyes működése | Siker | - | Jámbor Alexandra | 2020.12.09

@@ -15,3 +15,10 @@ Lépés | Funkció | Tesztelés leírása | Státusz | Megjegyzés | Aláírás 
 10 | Felhasználó lista | A felhasználók helyes kilistázásának vizsgálata | Siker | - | Jámbor Alexandra | 2020.12.08
 11 | Felhasználók módosítása | A felhasználók adatainak helyes betöltése | Siker | - | Jámbor Alexandra | 2020.12.08
 12 | Felhasználók módosítása | A felhasználók adatainak sikeres módosítása | Siker | - | Jámbor Alexandra | 2020.12.08
+13 | Felhasználó hozzáadása | Új felhasználó sikeres hozzáadása a listához és az adatbázishoz | Siker | - | Jámbor Alexandra | 2020.12.08
+14 | Felhasználó hozzáadása | Az új felhasználó adatainak sikeres megjelenítése a felhasználók listájában | Sikertelen | Az oldal újratöltésére volt szükség | Jámbor Alexandra | 2020.12.08
+15 | Felhasználó hozzáadása | Az új felhasználó adatainak sikeres megjelenítése a felhasználók listájában | Siker | - | Jámbor Alexandra | 2020.12.08
+16 | Felhasználó törlése | Meglévő felhasználó törlése a felhasználók listájából | Sikertelen | Az oldal többszöri újratöltésére volt szükség | Jámbor Alexandra | 2020.12.08
+17 | Felhasználó törlése | Meglévő felhasználó törlése a felhasználók listájából | Siker | - | Jámbor Alexandra | 2020.12.08
+18 | Felhasználó törlése | Meglévő felhasználó törlése az adatbázisból | Siker | - | Jámbor Alexandra | 2020.12.08
+19 | Admin interfész | Admin interfész helyes működése, menüpontok elérése | Siker | - | Jámbor Alexandra | 2020.12.09

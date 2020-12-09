@@ -1,9 +1,9 @@
 <?php
 require_once DATABASE_CONTROLLER;
 
-if(isset($_POST['edit'])):
+if(isset($_POST['addCity'])):
 	$query = "INSERT INTO cities (Name) VALUES (:Name)";
-	$params = [':Name' => $_POST['Name']];
+	$params = [':Name' => $_POST['name']];
 	if(!executeDML($query,$params)):
 		print_r($_POST);
 		echo '<br>';
@@ -21,7 +21,7 @@ else:
 				<label >Város neve</label>
 				<input name="name" type="text" class="form-control">
 			</div>
-			<button name="edit" type="submit" class="btn btn-primary">Hozzáadás</button>
+			<button name="addCity" type="submit" class="btn btn-primary">Hozzáadás</button>
 		</form>
 	</div>
 <?php endif;?>

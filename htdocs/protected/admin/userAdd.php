@@ -1,7 +1,7 @@
 <?php
 require_once DATABASE_CONTROLLER;
 
-if(isset($_POST['edit'])):
+if(isset($_POST['userAdd'])):
 	$query = "INSERT INTO users (username,email,password,flags) VALUES (:username, :email, :password, :flags)";
 	$params = [ 
 	':username' => $_POST['username'],
@@ -37,7 +37,7 @@ else:
 				<label >Jogok</label>
 				<input name="flags" type="text" class="form-control" >
 			</div>
-			<button name="edit" type="submit" class="btn btn-primary">Hozzáadás</button>
+			<button name="userAdd" type="submit" class="btn btn-primary">Hozzáadás</button>
 		</form>
 
 	</div>

@@ -1,7 +1,7 @@
 <?php
 require_once DATABASE_CONTROLLER;
 
-if(isset($_POST['edit'])):
+if(isset($_POST['addRestaurant'])):
 	$query = "INSERT INTO restaurants (name, szall_ido, szall_dij, ertekeles_ossz, ertekelok_szama, cityId) VALUES (:email, :szall_ido, :szall_dij, :ertekeles_ossz, :ertekelok_szama, :cityId)";
 	$params = [ 
 	':name' => $_POST['name'],
@@ -48,7 +48,7 @@ else:
 				<label >Város id</label>
 				<input name="cityId" type="text" class="form-control">
 			</div>
-			<button name="edit" type="submit" class="btn btn-primary">Hozzáadás</button>
+			<button name="addRestaurant" type="submit" class="btn btn-primary">Hozzáadás</button>
 		</form>
 
 	</div>

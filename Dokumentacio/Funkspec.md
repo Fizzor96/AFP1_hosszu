@@ -72,6 +72,14 @@ Regisztráció terv:
 
 ![Regisztráció](../Dokumentacio/Képek/Regisztráció.png)
 
+Étterem kiválasztása adott városban terv:
+
+![Étterem adott városban](../Dokumentacio/Képek/Éttermek_rendelés.png)
+
+Admin panel terv:
+
+![Admin panel](../Dokumentacio/Képek/Admin_panel.png)
+
 
 ## 8. Forgatókönyv
 

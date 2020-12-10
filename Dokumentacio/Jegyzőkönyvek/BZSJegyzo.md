@@ -25,5 +25,10 @@ Lépés | Funkció | Tesztelés leírása | Státusz | Megjegyzés | Aláírás 
 21 | Felhasználók módosítása | A felhasználók adatainak sikeres módosítása | Siker | - | Berkes Zsolt | 2020.12.08
 22 | Felhasználók módosítása | A felhasználók adatainak sikeres betöltése | Siker | - | Berkes Zsolt | 2020.12.08
 23 | Admin interfész | Admin interfész helyes működése, menüpontok elérése | Siker | - | Berkes Zsolt | 2020.12.08
-24 | Rendelések kezelése | A beérkezett rendelések láthatósága, elérhetősége | Siker | - | Berkes Zsolt | 2020.12.08
+25 | Rendelések kezelése | A berékezett rendelések státuszának módosíthatósága | Siker | - | Berkes Zsolt | 2020.12.09
+26 | Rendelések kezelése | A beérkezett rendelések láthatósága, elérhetősége | Siker | - | Berkes Zsolt | 2020.12.09
+27 | Rendelések kezelése | A leadott rendelés időpontjának helyes megjelenése | Siker | - | Berkes Zsolt | 2020.12.09
+28 | Étlap | A beérkezett rendelések láthatósága, elérhetősége | Siker | - | Berkes Zsolt | 2020.12.09
+29 | Felhasználók kezelése | A felhasználók megjelenése a kilistázás során | Siker | - | Berkes Zsolt | 2020.12.09
+30 | Felhasználók hozzáadása | Felhasználók sikeres hozzáadása az admininterfészen | Siker | - | Berkes Zsolt | 2020.12.09
 

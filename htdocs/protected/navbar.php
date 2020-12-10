@@ -32,9 +32,9 @@
 					<li class="nav-item">
 						<a class="nav-link" href="index.php?P=rendallapot">Rendeléseim</a>
 					</li>
-					<li class="nav-item">
+					<!--<li class="nav-item">
 						<a class="nav-link" href="index.php?P=settings">Beállítások</a>
-					</li>
+					</li>-->
 					<li class="nav-item">
 						<a class="nav-link" href="index.php?P=logout">Kijelentkezés</a>
 					</li>

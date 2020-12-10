@@ -114,6 +114,23 @@ switch ($_GET['P']) {
 			header('Location: index.php');
 		}
 	break;
+
+	case 'restaurantDelete':
+		if(check_admin_flag()){
+			require_once PROTECTED_DIR.'admin/restaurantDelete.php';
+		}
+		else{
+			header('Location: index.php');
+		}
+	break;
+	case 'citiesDelete':
+		if(check_admin_flag()){
+			require_once PROTECTED_DIR.'admin/cityDelete.php';
+		}
+		else{
+			header('Location: index.php');
+		}
+	break;
 	
 	case 'orderDelete':
 		if(check_user_is_restaurant() || check_admin_flag()){

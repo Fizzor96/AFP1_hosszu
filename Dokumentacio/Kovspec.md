@@ -82,9 +82,9 @@ Modifikáció | K3 | Felhasználó módosítása | A felhasználó módosítani 
 Modifikáció | K4 | Jelszó Módosítása | A felhasználó módosítani tudja saját jelszavát. Ehhez szükséges a régi és az új jelszavának megadása, valamint az új megerősítése.
 Modifikáció | K5 | Elfelejtett felhasználónév / jelszó | Ha a felhasználó elfelejtette a felhasználónevét, vagy jelszavát akkor ezzel az opcióval egy Adminhoz tud fordulni.
 Jogosultság | K6 | Jogosultsági szintek | -Admin <br> -Felhasználó
-Feladattípus | K7 | Kvíz | Több kérdésből áll, a feladat a helyes válasz kiválasztása több lehetőség közül. A felhasználó az eltelt idő függvényében pontot kap.
+Rendelés | K7 | Rendelés leadása | A felhasználó letudja adni a rendeléseit az étlapok oldalon
 Felület | K8 | Profil | A felhasználó részletes adatai, mérföldkövekkel.
-Statisztika | K9 | Toplista | Egy lista a játékosok pontszámairól, a lista elején a legtöbb pontot elért felhasználó található.
+Rendelés | K9 | Rendelések állapota | A felhasználok megtudják tekinteni rendelésük állapotát
 
 ## 9. Fogalomtár
 
